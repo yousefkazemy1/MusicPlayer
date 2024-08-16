@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 rootProject.name = "MusicPlayer"
 include(":androidApp")
 include(":shared")
+include(":croe")

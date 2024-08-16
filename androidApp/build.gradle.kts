@@ -17,7 +17,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
+        kotlinCompilerExtensionVersion = "1.5.12"
     }
     packaging {
         resources {
@@ -41,8 +41,19 @@ android {
 dependencies {
     implementation(projects.shared)
     implementation(libs.compose.ui)
-    implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
-    debugImplementation(libs.compose.ui.tooling)
+    implementation(libs.compose.ui.tooling.preview)
+    implementation(libs.compose.ui.tooling)
+    implementation(libs.compose.foundation)
+    implementation(libs.compose.runtime)
+    implementation(libs.compose.constraint.layout)
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
+    implementation(libs.compose.coil)
+    implementation(libs.kotlin.collection.immutable)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.lifecycle.viewModel)
+
+    testImplementation(kotlin("test"))
 }
