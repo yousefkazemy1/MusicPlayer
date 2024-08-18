@@ -2,8 +2,8 @@ package com.example.musicplayer.domain.usecase
 
 import com.example.musicplayer.domain.model.Music
 import com.example.musicplayer.domain.repository.MusicTrackRepository
-import com.example.musicplayer.provider.MusicOrder
-import com.example.musicplayer.provider.MusicOrderType
+import com.example.musicplayer.domain.model.MusicOrder
+import com.example.musicplayer.domain.model.MusicOrderType
 
 class GetMusicTracksUseCase(
     private val musicTrackRepository: MusicTrackRepository

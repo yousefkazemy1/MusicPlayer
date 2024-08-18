@@ -8,8 +8,8 @@ import android.provider.MediaStore
 import com.example.musicplayer.domain.model.Music
 import com.example.musicplayer.domain.model.MusicArtist
 import com.example.musicplayer.domain.repository.MusicTrackRepository
-import com.example.musicplayer.provider.MusicOrder
-import com.example.musicplayer.provider.MusicOrderType
+import com.example.musicplayer.domain.model.MusicOrder
+import com.example.musicplayer.domain.model.MusicOrderType
 
 class MusicTrackRepositoryImpl(
     private val context: Context,
